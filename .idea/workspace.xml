@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f0f9ad6-ff52-40d2-bacc-18ef43fa465d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9f0f9ad6-ff52-40d2-bacc-18ef43fa465d" name="Default Changelist" comment="update to latest course code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OwnerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IAccountOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IInfoProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/WithdrawOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/AccountsByOwnerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/interfaces/IDataSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataSaverInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/view/console/ConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +56,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="ConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.view.console.ConsoleApp" />
       <module name="DevFundamentalsProject" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -48,7 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ConsoleApp" />
       </list>
     </recent_temporary>
   </component>
@@ -66,21 +88,57 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="250" key="GridCell.Tab.0.bottom" timestamp="1585260249595">
+    <state x="440" y="176" key="#Project_Structure" timestamp="1585442389695">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
+    <state x="440" y="176" key="#Project_Structure/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585442389695" />
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586534260232">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534260232" />
+    <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586534257064">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534257064" />
+    <state x="413" y="127" key="CommitChangelistDialog2" timestamp="1586534303505">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="413" y="127" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534303505" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1586534261737">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261737" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249595" />
-    <state width="1358" height="250" key="GridCell.Tab.0.center" timestamp="1585260249593">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621238" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1586534261736">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261736" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249593" />
-    <state width="1358" height="250" key="GridCell.Tab.0.left" timestamp="1585260249593">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621237" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1586534261735">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261735" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087309" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249593" />
-    <state width="1358" height="250" key="GridCell.Tab.0.right" timestamp="1585260249594">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621237" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1586534261736">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261736" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249594" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621238" />
+    <state x="217" y="208" key="new project wizard" timestamp="1585860330686">
+      <screen x="0" y="23" width="1680" height="978" />
+    </state>
+    <state x="217" y="208" key="new project wizard/0.23.1680.978@0.23.1680.978" timestamp="1585860330686" />
   </component>
 </project>
