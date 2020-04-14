@@ -70,16 +70,21 @@ public class ConsoleApp {
                     case 'A':
                         showMainMenu();
                         break;
-                    case 'E':
-                        print("Exit...");
-                        closeApp = true;
-                        break;
-                    case 'B':
-                        print("My Balance is ...");
-                        break;
                     case 'W':
                         withdraw(scanner, accountId);
                         break;
+                    case 'D':
+                        deposit(scanner, accountId);
+                        break;
+                    case 'B':
+                        showBalance(accountId);
+                        break;
+                    case 'T':
+                        showTransactions(accountId);
+                        break;
+                    case 'E':
+                        print("Exit...");
+                        closeApp = true;
                     default:
                         print(option + " is an invalid option");
                         break;
@@ -93,6 +98,21 @@ public class ConsoleApp {
                 print("(A) Show All options");
             }
         }
+    }
+
+    private void showTransactions(int accountId) {
+        bankAccountController.showTransactions(accountId);
+    }
+
+    private void showBalance(int accountId) {
+        bankAccountController.showBalance(accountId);
+    }
+
+    private void deposit(Scanner scanner, int accountId) {
+        System.out.print("Enter amount you need to deposit: ");
+        double amount = scanner.nextDouble();
+        bankAccountController.deposit(accountId, amount);
+        System.out.println("successful deposit operation");
     }
 
     private char getSelectedOption(Scanner scanner) {

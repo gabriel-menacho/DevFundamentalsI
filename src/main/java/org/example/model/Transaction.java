@@ -18,6 +18,14 @@ public class Transaction {
         this.type = type;
     }
 
+    public TransactionType getType() {
+        return this.type;
+    }
+
+    public double getAmount() {
+        return this.amount;
+    }
+
     public int getAccountId() {
         return accountId;
     }

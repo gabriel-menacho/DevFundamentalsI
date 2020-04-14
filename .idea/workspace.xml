@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0f9ad6-ff52-40d2-bacc-18ef43fa465d" name="Default Changelist" comment="update to latest course code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OwnerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IAccountOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IInfoProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/WithdrawOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/AccountsByOwnerProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Owner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/interfaces/IDataSaver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataInMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataSaverInMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/view/console/ConsoleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/DepositOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/AccountBalanceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/console/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/console/ConsoleApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ZgS2ic7czmLOwpQVubCFcmL4o8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -59,6 +39,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunManager">
     <configuration name="ConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -85,7 +66,19 @@
       <option name="presentableId" value="Default" />
       <updated>1585259038115</updated>
     </task>
+    <task id="LOCAL-00001" summary="update to latest course code">
+      <created>1586534576570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586534576570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update to latest course code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to latest course code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="176" key="#Project_Structure" timestamp="1585442389695">
@@ -96,49 +89,78 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534260232" />
+    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1586811552820">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586811552820" />
     <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586534257064">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534257064" />
-    <state x="413" y="127" key="CommitChangelistDialog2" timestamp="1586534303505">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2152" y="131" key="CommitChangelistDialog2" timestamp="1586905280743">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="413" y="127" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534303505" />
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1586534261737">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="413" y="127" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534576417" />
+    <state x="2152" y="131" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586905280743" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1586574079072">
+      <screen x="0" y="23" width="1680" height="978" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261737" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249595" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.978@0.23.1680.978" timestamp="1586574079072" />
     <state width="1358" height="250" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621238" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1586534261736">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1586574079071">
+      <screen x="0" y="23" width="1680" height="978" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261736" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249593" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.978@0.23.1680.978" timestamp="1586574079071" />
     <state width="1358" height="250" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621237" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1586534261735">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1586574079071">
+      <screen x="0" y="23" width="1680" height="978" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261735" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087309" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249593" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.978@0.23.1680.978" timestamp="1586574079071" />
     <state width="1358" height="250" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621237" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1586534261736">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1586574079072">
+      <screen x="0" y="23" width="1680" height="978" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534261736" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.975@0.23.1680.975" timestamp="1585265087310" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1585260249594" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.977@0.23.1680.977" timestamp="1585360077289" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.978@0.23.1680.978" timestamp="1586574079072" />
     <state width="1358" height="250" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.979@0.23.1680.979" timestamp="1585340621238" />
+    <state x="2149" y="179" key="SettingsEditor" timestamp="1586905259726">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2149" y="179" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586905259726" />
+    <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586903902192">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586903902192" />
+    <state x="2346" y="175" width="588" height="729" key="find.popup" timestamp="1586906521944">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2346" y="175" width="588" height="729" key="find.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586906521944" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1586903914371">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586903914371" />
     <state x="217" y="208" key="new project wizard" timestamp="1585860330686">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
     <state x="217" y="208" key="new project wizard/0.23.1680.978@0.23.1680.978" timestamp="1585860330686" />
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1586906155759">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586906155759" />
   </component>
 </project>
