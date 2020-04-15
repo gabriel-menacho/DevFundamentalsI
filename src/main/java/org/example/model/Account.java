@@ -28,6 +28,10 @@ public class Account {
         return this.total;
     }
 
+    public List<Transaction> getTransactions() {
+        return this.transactions;
+    }
+
     public void addTransaction(Transaction transaction) {
         double amount = transaction.getAmount();
         double total = getTotal();

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0f9ad6-ff52-40d2-bacc-18ef43fa465d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/BalanceOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/TransactionOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/BalanceOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/BalanceOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataInMemory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586908222154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: balance operator implemented">
+      <created>1586911936530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586911936530</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update to latest course code" />
     <MESSAGE value="chore: deposit operator implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: deposit operator implemented" />
+    <MESSAGE value="chore: balance operator implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: balance operator implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="176" key="#Project_Structure" timestamp="1585442389695">
@@ -94,19 +102,19 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534260232" />
-    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1586811552820">
+    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1586912971969">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586811552820" />
+    <state x="2453" y="256" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586912971969" />
     <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586534257064">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="577" y="316" key="#com.intellij.ide.util.TreeClassChooserDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534257064" />
-    <state x="2152" y="131" key="CommitChangelistDialog2" timestamp="1586908221943">
+    <state x="2152" y="131" key="CommitChangelistDialog2" timestamp="1586911936394">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="413" y="127" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1586534576417" />
-    <state x="2152" y="131" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586908221943" />
+    <state x="2152" y="131" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1586911936394" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1586574079072">
       <screen x="0" y="23" width="1680" height="978" />
     </state>

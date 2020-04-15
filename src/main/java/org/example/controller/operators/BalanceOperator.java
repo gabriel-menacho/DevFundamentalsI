@@ -1,20 +1,18 @@
 package org.example.controller.operators;
 
-import org.example.controller.interfaces.IAccountOperator;
-import org.example.model.Account;
+import org.example.controller.interfaces.IInfoProvider;
 import org.example.model.interfaces.IDataSaver;
 
-public class BalanceOperator implements IAccountOperator {
+public class BalanceOperator implements IInfoProvider<Double, Integer> {
 
     private IDataSaver dataSaver;
 
     public BalanceOperator(IDataSaver dataSaver) {
         this.dataSaver = dataSaver;
     }
+
     @Override
-    public boolean execute(int id, double amount) {
-        Account account = dataSaver.getAccountById(id);
-        System.out.println("Balance: " + account.getTotal());
-        return true;
+    public Double get(Integer id) {
+        return dataSaver.getAccountById(id).getTotal();
     }
 }
