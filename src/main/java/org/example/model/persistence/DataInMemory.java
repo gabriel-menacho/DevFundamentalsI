@@ -76,10 +76,19 @@ public class DataInMemory {
     }
 
     public void addTransaction(Transaction transaction) {
-        transactions.add(transaction);
         Optional<Account> account = getAccountById(transaction.getAccountId());
-        if (account.isPresent()) {
-            account.get().addTransaction(transaction);
+        double total = account.get().getTotal();
+        double amount = transaction.getAmount();
+        boolean addNewTransaction = true;
+        if (transaction.getType().equals(TransactionType.WITHDRAW) && total < amount) {
+            addNewTransaction = false;
+            System.out.println("Not enough funds to withdraw that amount");
+        }
+        if (addNewTransaction) {
+            transactions.add(transaction);
+            if (account.isPresent()) {
+                account.get().addTransaction(transaction);
+            }
         }
     }
 }

@@ -24,30 +24,22 @@ public class Account {
         this.total = total;
     }
 
-    private double getTotal() {
+    public double getTotal() {
         return this.total;
     }
 
     public void addTransaction(Transaction transaction) {
         double amount = transaction.getAmount();
         double total = getTotal();
-        boolean addNewTransaction = true;
         switch (transaction.getType()) {
             case DEPOSIT:
                 setTotal(total + amount);
                 break;
             case WITHDRAW:
-                if (total <= amount) {
-                    setTotal(total - amount);
-                } else {
-                    System.out.println("Not enough funds to withdraw that amount");
-                    addNewTransaction = false;
-                }
+                setTotal(total - amount);
                 break;
         }
-        if (addNewTransaction) {
-            transactions.add(transaction);
-        }
+        transactions.add(transaction);
     }
 
     public String getOwnerId() {
